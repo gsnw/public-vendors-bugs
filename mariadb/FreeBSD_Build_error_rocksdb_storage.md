@@ -56,8 +56,14 @@ make: stopped in /usr/local/src/mariadb-10.4.7
 
 ## Workaround
 
-Use mariadDB FreeBSD Fork: https://github.com/gsnw/mariadb-freebsd-release
+Use mariadDB FreeBSD patch from gsnw-ports tree: https://github.com/gsnw/gsnw-ports/tree/main/databases/mariadb-105/patch
 
+1) Download source from https://downloads.mariadb.org/
+2) Extract source
+3) Download appropriate patch from gsnw-ports tree
+4) Go inside the mariadb source and execute ```patch -p1 -i <path patchfile>```
+
+### Patch content
 ```
 JEMALLOC_USABLE_SIZE_CONST is not defined in FreeBSD's jemalloc(3), define the
 macro to "const".
