@@ -2,9 +2,9 @@
 
 Ticket: [MDEV-27222](https://jira.mariadb.org/browse/MDEV-27222)
 
-System: FreeBSD 13.0-p4
-Compiler: clang 11.0.1 with cmake 3.22.0 and bison 3.8.2
-Build: cmake -DWITHOUT_TOKUDB=1 -DWITHOUT_MROONGA=1 ..
+System: FreeBSD 13.0-p4  
+Compiler: clang 11.0.1 with cmake 3.22.0 and bison 3.8.2  
+Build: cmake -DWITHOUT_TOKUDB=1 -DWITHOUT_MROONGA=1 ..  
 
 __make Error__
 ```
